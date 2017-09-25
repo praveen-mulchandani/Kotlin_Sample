@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/viewTrainNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:textColorHint="@color/orange"
+        >
+
+        <EditText
+            android:id="@+id/etTrainNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:ems="8"
+            android:hint="@string/train_no"
+            android:inputType="number"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:textColorHint="@color/orange"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/viewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewTrainNo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textColorHint="@color/orange"
+        >
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:clickable="true"
+            android:ems="8"
+            android:focusable="false"
+            android:hint="@string/date_enter"
+            android:inputType="date"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text="@string/yyyy_mm_dd"
+            android:textColorHint="@color/orange"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSubmitTrainStatus"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="@string/submit"
+        android:layout_below="@+id/viewDate"
+        android:layout_alignStart="@+id/viewDate"
+        android:layout_alignEnd="@+id/viewDate"/>
+    <Button
+        android:id="@+id/btnShowHistory"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Show History"
+        android:layout_below="@+id/btnSubmitTrainStatus"
+        android:layout_alignStart="@+id/viewDate"
+        android:layout_alignEnd="@+id/btnSubmitTrainStatus"/>
+</RelativeLayout>
+
+

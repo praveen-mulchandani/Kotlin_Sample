@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TrainLiveStatus</string>
+    <string name="pnr_status">PNR status</string>
+    <string name="live_status">Running Status</string>
+    <string name="enter_pnr">Enter Pnr</string>
+    <string name="submit">Submit</string>
+    <string name="train_no">Train No</string>
+    <string name="date_enter">Enter Date</string>
+    <string name="yyyy_mm_dd">yyyy-mm-dd</string>
+    <string name="train_status_base_url">https://api.railwayapi.com/v2/live/train/</string>
+    <string name="doj">/date/</string>
+    <string name="api_key">/apikey/egac6j72l1/</string>
+    <string name="data_not_available">Data Not Available Error !!!</string>
+</resources>
